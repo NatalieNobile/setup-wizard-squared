@@ -1,0 +1,25 @@
+# Cloned source repos used for survey + porting (vendored locally, not tracked)
+examples/*/source/
+examples/*-source/
+
+# Python build/cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# Editor / OS noise
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Secrets — anything matching common token-bearing filenames should never
+# get committed even from the example wizards
+*.env
+*.env.local
+!*.env.example
+.box-config.json
+box-config.properties
