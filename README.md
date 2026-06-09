@@ -46,7 +46,7 @@ Full discussion in [`reference/patterns.md`](./reference/patterns.md).
 
 | Repo                          | Wizard scope                                               | Status     |
 | ----------------------------- | ---------------------------------------------------------- | ---------- |
-| [box/box-java-sdk](./examples/box-java-sdk/) | Java + Gradle preflight, Developer Token / OAuth / JWT auth picker, smoke-test compile | TBD        |
+| [box/box-java-sdk](./examples/box-java-sdk/) | Java + Gradle preflight, Developer Token / JWT / CCG / OAuth auth picker, smoke-test snippet | Draft PR: [box/box-java-sdk#1878](https://github.com/box/box-java-sdk/pull/1878) |
 
 ## License
 

@@ -194,7 +194,12 @@ typically another 200–400 lines on top.
 
 | Repo                                                       | Notes                                                                                                  |
 | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| [`examples/box-java-sdk`](./examples/box-java-sdk/) | Java/Gradle preflight, Developer Token / OAuth / JWT auth-mode picker, smoke-test compile in `users.getMe`. |
+| [`examples/box-java-sdk/`](./examples/box-java-sdk/)       | Java/Gradle preflight + 4-mode auth picker (Developer Token / JWT / CCG / OAuth) + smoke-test snippet. Draft PR upstream: [box/box-java-sdk#1878](https://github.com/box/box-java-sdk/pull/1878). |
+
+The `box-java-sdk` example exercises every reusable primitive in the
+scaffold except `progress_watch` (no long-running subprocess in this
+flow). Read it end-to-end before applying the scaffold to a new repo —
+it's the fastest way to internalize the per-repo customization shape.
 
 When you produce a new wizard, drop a copy of the customized files (just
 `setup/` + `scripts/` + the docs artifact) into `examples/<repo-name>/`
