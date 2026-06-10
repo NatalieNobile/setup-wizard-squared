@@ -47,6 +47,11 @@ Full discussion in [`reference/patterns.md`](./reference/patterns.md).
 | Repo                          | Wizard scope                                               | Status     |
 | ----------------------------- | ---------------------------------------------------------- | ---------- |
 | [box/box-java-sdk](./examples/box-java-sdk/) | Java + Gradle preflight, Developer Token / JWT / CCG / OAuth auth picker, smoke-test snippet | Draft PR: [box/box-java-sdk#1878](https://github.com/box/box-java-sdk/pull/1878) |
+| [box/box-python-sdk](./examples/box-python-sdk/) | Python + pip preflight (with optional editable install), Developer Token / JWT / CCG / OAuth auth picker, smoke-test snippet | Draft PR: [box/box-python-sdk#1475](https://github.com/box/box-python-sdk/pull/1475) |
+
+Same scaffold, two ecosystems. The Java/Python pair shows the
+scaffold is genuinely portable — only step bodies and check
+functions change between them.
 
 ## License
 

@@ -195,11 +195,14 @@ typically another 200–400 lines on top.
 | Repo                                                       | Notes                                                                                                  |
 | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | [`examples/box-java-sdk/`](./examples/box-java-sdk/)       | Java/Gradle preflight + 4-mode auth picker (Developer Token / JWT / CCG / OAuth) + smoke-test snippet. Draft PR upstream: [box/box-java-sdk#1878](https://github.com/box/box-java-sdk/pull/1878). |
+| [`examples/box-python-sdk/`](./examples/box-python-sdk/)   | Python/pip preflight (with optional `pip install -e .[test,dev]`) + same 4-mode auth picker + smoke-test snippet. Draft PR upstream: [box/box-python-sdk#1475](https://github.com/box/box-python-sdk/pull/1475). |
 
-The `box-java-sdk` example exercises every reusable primitive in the
-scaffold except `progress_watch` (no long-running subprocess in this
-flow). Read it end-to-end before applying the scaffold to a new repo —
-it's the fastest way to internalize the per-repo customization shape.
+Read both examples end-to-end before applying the scaffold to a new
+repo — together they show how the scaffold survives ecosystem changes
+(Java/Gradle vs. Python/pip) with only step-body and check-function
+edits. The Python example also documents the one ecosystem-specific
+concession: rename the package to `dev_setup/` (not `setup/`) so it
+doesn't collide with `setup.py` and `setuptools.find_packages()`.
 
 When you produce a new wizard, drop a copy of the customized files (just
 `setup/` + `scripts/` + the docs artifact) into `examples/<repo-name>/`
